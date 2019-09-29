@@ -9,6 +9,7 @@
             <p>{!! $post->content !!}</p>
             <b>Category: </b> {{ $post->category->name }},
             <b>Post By</b> {{ $post->user->name }}
+            <b>Date:</b>{{ $post->created_at->diffForHumans() }}
         </div>
     </div>
     <div class="row">
